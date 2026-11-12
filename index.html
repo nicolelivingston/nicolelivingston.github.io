@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nicole Livingston – Product Manager</title>
+  <meta name="description" content="Nicole Livingston, product manager. Portfolio coming soon.">
+  <style>
+    :root {
+      --bg: #fbfaf7;
+      --text: #1f2328;
+      --muted: #5c6370;
+      --accent: #2f6f8f;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14171a;
+        --text: #e8eaed;
+        --muted: #a3aab4;
+        --accent: #7cb8d6;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+    main { max-width: 36rem; }
+    h1 {
+      font-size: clamp(2rem, 6vw, 3rem);
+      line-height: 1.1;
+      margin: 0 0 0.75rem;
+      letter-spacing: -0.02em;
+    }
+    p { margin: 0 0 1rem; font-size: 1.125rem; }
+    .muted { color: var(--muted); }
+    nav { margin-top: 1.5rem; display: flex; gap: 1.25rem; }
+    a {
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+    }
+    a:hover, a:focus-visible { border-bottom-color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Nicole Livingston</h1>
+    <p>Product manager. I like turning messy data into a story, and lately I'm building things with AI.</p>
+    <p class="muted">Portfolio coming soon.</p>
+    <nav aria-label="Links">
+      <a href="https://github.com/nicolelivingston">GitHub</a>
+    </nav>
+  </main>
+</body>
+</html>
