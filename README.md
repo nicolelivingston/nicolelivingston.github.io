@@ -12,7 +12,7 @@ Nicole Livingston's personal site. Jekyll on GitHub Pages, served at https://nic
 
 ## Visitor stats
 
-GoatCounter counts visits with no cookies and no personal data, so the site needs no cookie banner. The script is in `_layouts/default.html` and the site code is `goatcounter` in `_config.yml`. Stats: https://nicolelivingston.goatcounter.com. To stop counting your own visits, open https://nicolelivingston.com/#toggle-goatcounter once on each browser you use.
+Cloudflare Web Analytics counts visits with no cookies and no personal data, so the site needs no cookie banner. The script is at the bottom of `_layouts/default.html` and the site token is `cloudflare_analytics` in `_config.yml`. Stats: Cloudflare dashboard > Analytics > Web analytics > nicolelivingston.com.
 
 ## Updating What I'm up to
 
