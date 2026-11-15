@@ -1,0 +1,11 @@
+title: Nicole Livingston
+description: Product manager. I turn messy data into a story, make things, and go places.
+url: https://nicolelivingston.com
+author: Nicole Livingston
+permalink: /notes/:year/:title/
+plugins:
+  - jekyll-feed
+feed:
+  path: feed.xml
+exclude:
+  - README.md
