@@ -10,6 +10,10 @@ Nicole Livingston's personal site. Jekyll on GitHub Pages, served at https://nic
 - `assets/img/`: photos (location data stripped), the favicon set, and `og-image.png`, the link preview picture.
 - `_posts/`: notes go here later as `YYYY-MM-DD-title.md`. The RSS feed (`/feed.xml`) builds itself.
 
+## Visitor stats
+
+Cloudflare Web Analytics counts visits with no cookies and no personal data, so the site needs no cookie banner. The script is at the bottom of `_layouts/default.html` and the site token is `cloudflare_analytics` in `_config.yml`. Stats: Cloudflare dashboard > Analytics > Web analytics > nicolelivingston.com.
+
 ## Updating What I'm up to
 
 Edit the rows in the card table in `index.html`, and change the season in the header row (for example WINTER 2026).

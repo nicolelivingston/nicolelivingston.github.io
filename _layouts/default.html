@@ -31,5 +31,6 @@
 <div class="pg">
 {{ content }}
 </div>
+{% if jekyll.environment == "production" and site.cloudflare_analytics %}<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ site.cloudflare_analytics }}"}'></script>{% endif %}
 </body>
 </html>
