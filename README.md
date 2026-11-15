@@ -12,7 +12,11 @@ Nicole Livingston's personal site. Jekyll on GitHub Pages, served at https://nic
 
 ## Visitor stats
 
-Cloudflare Web Analytics counts visits with no cookies and no personal data, so the site needs no cookie banner. The script is at the bottom of `_layouts/default.html` and the site token is `cloudflare_analytics` in `_config.yml`. Stats: Cloudflare dashboard > Analytics > Web analytics > nicolelivingston.com.
+GoatCounter counts visits with no cookies and no personal data, so the site needs no cookie banner. The scripts are at the bottom of `_layouts/default.html` and the site code is `goatcounter` in `_config.yml`. Stats: https://nicolelivingston.goatcounter.com.
+
+- **Where people come from:** the Referrers list on the dashboard.
+- **Where people go:** every link that leaves the site is counted automatically, including links in future notes. Clicks show up as events named `out-` plus the address (for example `out-linkedin.com/in/nicolelivingston/`), and the event's referrer is the page the link was clicked on.
+- **Your own visits:** open https://nicolelivingston.com/#toggle-goatcounter once on each browser you use, so they don't count.
 
 ## Updating What I'm up to
 

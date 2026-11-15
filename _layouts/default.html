@@ -31,6 +31,15 @@
 <div class="pg">
 {{ content }}
 </div>
-{% if jekyll.environment == "production" and site.cloudflare_analytics %}<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ site.cloudflare_analytics }}"}'></script>{% endif %}
+{% if jekyll.environment == "production" and site.goatcounter %}<script>
+/* Visitor stats: count clicks on links that leave the site, and the page they were clicked on. */
+document.querySelectorAll('a[href^="http"]').forEach(function (a) {
+  if (a.hostname.replace(/^www\./, '') === location.hostname.replace(/^www\./, '')) return;
+  a.dataset.goatcounterClick = 'out-' + a.hostname.replace(/^www\./, '') + a.pathname;
+  a.dataset.goatcounterTitle = a.textContent.replace(/\s+/g, ' ').trim() || a.hostname;
+  a.dataset.goatcounterReferrer = location.pathname;
+});
+</script>
+<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>{% endif %}
 </body>
 </html>
